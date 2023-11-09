@@ -4,15 +4,20 @@
   padding: 2rem; */
   text-align: left;
 }
-
-header {
+header, footer {
+  background-color: cornsilk;
   width: calc(100vw - 4rem);
   display: flex;
   flex-direction: row;
+}
+
+header {
   justify-content: space-between;
-  align-content: flex-end;
-  background-color: cornsilk;
   padding: 2rem 2rem 1rem;
+}
+
+footer {
+  padding: 1rem 2rem 2rem;
 }
 
 nav {
