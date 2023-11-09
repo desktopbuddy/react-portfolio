@@ -10,6 +10,10 @@ a {
   color: rgb(77, 44, 44);
 }
 
+a:hover {
+  color: rgb(77, 192, 227);
+}
+
 header, footer {
   background-color: rgb(252, 250, 241);
   width: calc(100vw - 4rem);
@@ -35,6 +39,10 @@ nav {
   align-self: flex-end;
   justify-self: flex-end;
   justify-content: flex-end;
+}
+
+.nav-link.active {
+  color: rgb(77, 192, 227);
 }
 
 .header-title {
