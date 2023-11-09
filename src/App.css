@@ -1,9 +1,9 @@
 #root {
-  max-width: 1280px;
   /* margin: 0 auto;
   padding: 2rem; */
   text-align: left;
   color: rgb(77, 44, 44);
+  background-color: rgb(252, 250, 241);
 }
 
 a {
@@ -23,6 +23,7 @@ header, footer {
 
 main {
   padding: 3rem 2rem 2rem;
+  background-color: white;
 }
 header {
   justify-content: space-between;
@@ -56,4 +57,24 @@ nav {
 .nav-item > a {
   font-weight: normal;
 }
+section {
+  width: 80vw;
+  margin: 0 auto;
+}
 
+#about-section {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  place-content: center;
+}
+
+#about-img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 16px;
+}
+
+#about-text {
+  margin: 2rem 4rem;
+}
