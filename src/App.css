@@ -3,14 +3,23 @@
   /* margin: 0 auto;
   padding: 2rem; */
   text-align: left;
+  color: rgb(77, 44, 44);
 }
+
+a {
+  color: rgb(77, 44, 44);
+}
+
 header, footer {
-  background-color: cornsilk;
+  background-color: rgb(252, 250, 241);
   width: calc(100vw - 4rem);
   display: flex;
   flex-direction: row;
 }
 
+main {
+  padding: 3rem 2rem 2rem;
+}
 header {
   justify-content: space-between;
   padding: 2rem 2rem 1rem;
@@ -30,7 +39,6 @@ nav {
 
 .header-title {
   font-size: 1.5rem;
-  color: rgb(77, 44, 44)
 }
 
 .nav-item {
@@ -38,6 +46,6 @@ nav {
 }
 
 .nav-item > a {
-  color: rgb(77, 44, 44);
   font-weight: normal;
 }
+
