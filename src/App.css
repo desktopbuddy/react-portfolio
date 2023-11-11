@@ -62,6 +62,7 @@ section {
   margin: 0 auto;
 }
 
+/* about page */
 #about-section {
   display: flex;
   flex-direction: row;
@@ -77,4 +78,60 @@ section {
 
 #about-text {
   margin: 2rem 4rem;
+}
+
+/* portfolio page */
+#portfolio-section {
+  width: 60vw;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 2rem 1rem;
+}
+
+.project-card {
+  width: 60%;
+  border: 1px solid rgb(225, 214, 214);
+  /* background-color:rgb(239, 239, 237); */
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+}
+
+.project-title {
+  margin: 0;
+}
+
+.project-description {
+  margin: 0;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.live-btn {
+  background-color: rgb(148, 109, 109);
+  color: white;
+}
+
+/* .live-btn:hover {
+  background-color: rgb(77, 192, 227);
+  color: white;
+} */
+
+.github-btn {
+  /* border: 1px solid rgb(225, 214, 214); */
+  color: rgb(148, 109, 109);
+}
+
+button:hover {
+  background-color: rgb(77, 192, 227);
+  color: white;
 }
