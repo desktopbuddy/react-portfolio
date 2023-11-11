@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -11,6 +12,9 @@ function App() {
   const renderPage = () => {
     if (currentPage === 'About') {
       return <About />
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />
     }
   };
 
