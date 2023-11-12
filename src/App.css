@@ -116,6 +116,18 @@ section {
   gap: .5rem;
 }
 
+.live-btn, .github-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 0.8em;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
 .live-btn {
   background-color: rgb(148, 109, 109);
   color: white;
@@ -131,7 +143,7 @@ section {
   color: rgb(148, 109, 109);
 }
 
-button:hover {
+.live-btn:hover, .github-btn:hover {
   background-color: rgb(77, 192, 227);
   color: white;
 }
