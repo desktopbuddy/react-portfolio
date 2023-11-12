@@ -190,3 +190,10 @@ textarea {
   align-self: flex-end;
   margin: 1rem;
 }
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-left: .5rem;
+}

@@ -19,6 +19,15 @@ export default function Contact() {
     }
   }
 
+  const handleRequiredFields = (e) => {
+    const targetRequiredEl = document.getElementById(`${e.target.name}-required`);
+    if (!e.target.value.length) {
+      targetRequiredEl.textContent = `*${e.target.name} required`;
+    } else {
+      targetRequiredEl.textContent = '';
+    }
+  }
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     // reset form
@@ -32,29 +41,41 @@ export default function Contact() {
       <h2>Send me a message!</h2>
       <form id="contact-form" onSubmit={handleFormSubmit}>
         <div className="input-group">
-          <label for="name">Name</label>
+          <div className="input-labels">
+            <label for="name">Name</label>
+            <span id="name-required" class="error-message"></span>
+          </div>
           <input
             value={name}
             name="name"
             onChange={handleInputChange}
             type="text"
+            onBlur={handleRequiredFields}
           />
         </div>
         <div className="input-group">
-          <label for="email">Email</label>
+          <div className="input-labels">
+            <label for="email">Email</label>
+            <span id="email-required" class="error-message"></span>
+          </div>
           <input
             value={email}
             name="email"
             onChange={handleInputChange}
             type="email"
+            onBlur={handleRequiredFields}
           />
         </div>
         <div className="input-group">
-          <label for="message">Message</label>
+          <div className="input-labels">
+            <label for="message">Message</label>
+            <span id="message-required" class="error-message"></span>
+          </div>
           <textarea
             value={message}
             name="message"
             onChange={handleInputChange}
+            onBlur={handleRequiredFields}
           />
         </div>
         <button type="submit">Send</button>
