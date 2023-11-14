@@ -3,7 +3,7 @@
   padding: 2rem; */
   text-align: left;
   color: rgb(77, 44, 44);
-  background-color: rgb(252, 250, 241);
+  background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -21,6 +21,13 @@ header, footer {
   flex-direction: row;
 }
 
+footer {
+  gap: .5rem;
+  place-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
 main {
   padding: 3rem 2rem 2rem;
   background-color: white;
@@ -31,7 +38,7 @@ header {
 }
 
 footer {
-  padding: 1rem 2rem 2rem;
+  padding: 2rem 2rem;
 }
 
 nav {
