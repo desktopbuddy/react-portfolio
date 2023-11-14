@@ -78,7 +78,7 @@ export default function Contact() {
             onBlur={handleRequiredFields}
           />
         </div>
-        <button type="submit">Send</button>
+        <button class="btn-primary" type="submit">Send</button>
       </form>
     </section>
   )

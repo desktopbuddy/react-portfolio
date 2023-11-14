@@ -4,8 +4,8 @@ export default function Project({ project }) {
       <h3 class="project-title">{project.title}</h3>
       <p class="project-description">{project.description}</p>
       <div class="project-links">
-        <a class="live-btn" href={project.deployed} target="_blank" rel="noopener noreferrer">Live site 🡕 </a>
-        <a class="github-btn" href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn-primary" href={project.deployed} target="_blank" rel="noopener noreferrer">Live site 🡕 </a>
+        <a class="btn-secondary" href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   )
